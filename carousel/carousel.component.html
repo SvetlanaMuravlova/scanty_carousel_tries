@@ -1,0 +1,40 @@
+<!--<div *ngFor="let slide of slides; index as i; count as c" class="carousel-item" role="tabpanel">-->
+<!--  <ng-template [ngTemplateOutlet]="slide.tplRef"></ng-template>-->
+<!--</div>-->
+
+<!--<div *ngFor="let slide of slides; index as i; count as c" class="carousel-item" role="tabpanel" [class.active]="i === 1">-->
+<!--  &lt;!&ndash;        <ng-template [ngTemplateOutlet]="slide.tplRef" [ngTemplateOutletContext]="{width: width}"></ng-template>&ndash;&gt;-->
+<!--  <ng-content></ng-content>-->
+<!--</div>-->
+
+  <div class="carousel slide" tabindex="0">
+<!--    <ol class="carousel-indicators" *ngIf="showIndicators && slides.length > 1">-->
+<!--      <li *ngFor="let slide of indicatorsSlides(); let i = index;"-->
+<!--          [class.active]="slide.active === true"-->
+<!--          (click)="selectSlide(i)">-->
+<!--      </li>-->
+<!--    </ol>-->
+    <div class="carousel-inner">
+<!--      <div *ngFor="let slide of slides; index as i; count as c" class="carousel-item" role="tabpanel" [class.active]="i === 1">-->
+<!--&lt;!&ndash;        <ng-template [ngTemplateOutlet]="slide.tplRef" [ngTemplateOutletContext]="{width: width}"></ng-template>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ng-content [ngTemplateOutlet]="slide.tplRef"></ng-content>&ndash;&gt;-->
+<!--      </div>-->
+      <ng-content></ng-content>
+    </div>
+    <a class="left carousel-control carousel-control-prev"
+       tabindex="0" role="button">
+      <span class="icon-prev carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control carousel-control-next"
+       tabindex="0" role="button">
+      <span class="icon-next carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+

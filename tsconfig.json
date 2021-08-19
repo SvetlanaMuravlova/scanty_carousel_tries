@@ -19,5 +19,10 @@
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
+  },
+  "paths": {
+    "ngx-bootstrap-doc/carousel": [
+      "carousel/index.ts"
+    ]
   }
 }

@@ -122,6 +122,28 @@
           }
         }
       }
+    },
+    "carousel": {
+      "root": ".",
+      "sourceRoot": "./carousel",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "outputs": [
+            "./dist/carousel"
+          ],
+          "options": {
+            "tsConfig": "carousel/tsconfig.lib.json",
+            "project": "carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "carousel/tsconfig.lib.prod.json"
+            }
+          }
+        }
+      }
     }
   },
   "defaultProject": "tryNewCarousel"
